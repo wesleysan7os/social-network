@@ -3,7 +3,11 @@ interface ButtonProps {
 }
 
 function Button(props: ButtonProps) {
-  return <button>{ props.text ?? 'Default'}</button>
+  return (
+    <button className="bg-violet-500 px-2 h-10 rounded hover:bg-violet-700 transition-colors">
+      {props.text ?? "Default"}
+    </button>
+  );
 }
 
 function App() {
