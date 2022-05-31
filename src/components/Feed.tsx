@@ -9,7 +9,6 @@ export function Feed() {
       <Post />
       <Post />
       <Post />
-      <Post />
     </Box>
   );
 }
