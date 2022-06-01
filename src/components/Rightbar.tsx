@@ -30,7 +30,7 @@ export function Rightbar() {
           />
           <Avatar
             alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/8.jpg"
+            src="https://material-ui.com/static/images/avatar/4.jpg"
           />
           <Avatar
             alt="Wrevor Henderson"
@@ -42,7 +42,7 @@ export function Rightbar() {
           />
           <Avatar
             alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/8.jpg"
+            src="https://material-ui.com/static/images/avatar/5.jpg"
           />
         </AvatarGroup>
         <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
