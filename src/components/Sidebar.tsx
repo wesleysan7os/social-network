@@ -1,9 +1,23 @@
 import { AccountBox, Article, Group, Home, ModeNight, Person, Settings, Storefront } from "@mui/icons-material";
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from "@mui/material";
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Switch,
+  PaletteMode
+} from "@mui/material";
 
-export function Sidebar() {
+type SidebarProps = {
+  mode: PaletteMode;
+  setMode: (mode: PaletteMode) => void;
+};
+
+export function Sidebar({ mode, setMode }: SidebarProps) {
   return (
-    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" }}}>
+    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
         <List>
           <ListItem disablePadding>
@@ -67,7 +81,7 @@ export function Sidebar() {
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              <Switch />
+              <Switch onChange={() => setMode(mode === "light" ? "dark" : "light")}/>
             </ListItemButton>
           </ListItem>
         </List>
